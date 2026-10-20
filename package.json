@@ -1,12 +1,17 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "description": "Minimal Playwright browser testing project",
+  "description": "TypeScript Playwright E2E framework with a local workspace demo",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "demo": "node demo/server.cjs",
+    "typecheck": "tsc --noEmit",
+    "test:auth": "playwright test tests/specs/auth.spec.ts",
+    "test:directory": "playwright test tests/specs/directory.spec.ts",
+    "test:ci": "playwright test --workers=2"
   },
   "repository": {
     "type": "git",
@@ -22,7 +27,8 @@
   "homepage": "https://github.com/shailakunwar77/playwright#readme",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.5"
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
   },
   "private": true
 }

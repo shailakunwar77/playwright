@@ -1,0 +1,2 @@
+Playwright upload fixture
+A deterministic UTF-8 attachment for browser file upload tests.
