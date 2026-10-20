@@ -1,0 +1,28 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Minimal Playwright browser testing project",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shailakunwar77/playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shailakunwar77/playwright/issues"
+  },
+  "homepage": "https://github.com/shailakunwar77/playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  },
+  "private": true
+}
